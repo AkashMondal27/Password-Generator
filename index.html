@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+   <a href="#home" class="logo">Home</a>
+     
+   <div class="theme-toggle">
+      <button id="lightBtn" onclick="setLight()">Light</button>
+      <button id="darkBtn" onclick="setDark()">Dark</button>
+   </div>
+
+  <nav>
+    <a href="#guidelines">Guidelines</a>
+    <a href="#password-generator" class="nav-generate">Generate</a>
+    
+  </nav>
+</header>
+
+<!-- ================= MAIN LAYOUT ================= -->
+<section class="main-layout" id="home">
+
+  <!-- LEFT : HOME CONTENT -->
+  <div class="home-left">
+    <h1><span>Password</span> Generator</h1>
+    <h3 class="subtitle">
+    Fast • Random • Customizable
+        </h3> 
+    <p>
+     Create strong, secure, and unpredictable passwords in seconds.<br>
+     Protect your online accounts from unauthorized access by using randomly
+generated passwords that are difficult to guess or crack.
+    </p>
+  </div>
+
+  <!-- RIGHT : PASSWORD GENERATOR -->
+  <div class="home-right" id="password-generator">
+    <div class="container">
+      <h2>Password <samp>Generator</samp></h2>
+
+      <div class="password-box">
+        <input type="text" id="password" readonly placeholder="Password">
+        <span class="copy" onclick="copyPassword()">📋</span>
+      </div>
+           
+
+      <p id="copyMsg1"></p>
+      <p id="copyMsg2"></p>
+
+        <div class="length-row">
+        <label for="length">Password Length</label>
+        <input type="number" id="length" min="4" max="50" value="8">
+        </div>
+
+
+            <div class="options">
+        <label class="option">
+          <input type="checkbox" id="uppercase" checked>
+          <span>ABC..XYZ</span>
+        </label>
+
+        <label class="option">
+          <input type="checkbox" id="lowercase" checked>
+          <span>abc..xyz</span>
+        </label>
+
+        <label class="option">
+          <input type="checkbox" id="numbers" checked>
+          <span>Numbers</span>
+        </label>
+
+        <label class="option">
+          <input type="checkbox" id="symbols" checked>
+          <span>Symbols</span>
+        </label>
+      </div>
+
+
+      <p id="copyMsg3"></p>
+      <button onclick="generatePassword()">Generate Password</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= GUIDELINES SECTION ================= -->
+<section class="guidelines-section" id="guidelines">
+
+  <h2>How to Use the Password Generator</h2>
+
+  <ol class="guidelines-list">
+    <li>
+      Select the desired <strong>password length</strong> using the number input.
+      A longer password generally provides better security.
+    </li>
+
+    <li>
+      Choose at least one <strong>character type</strong> such as uppercase letters,
+      lowercase letters, numbers, or special symbols.
+    </li>
+
+    <li>
+      Click on the <strong>“Generate Password”</strong> button to create a random,
+      secure password instantly.
+    </li>
+
+    <li>
+      Review the generated password and ensure it meets the security
+      requirements of the platform where it will be used.
+    </li>
+
+    <li>
+      Click the <strong>copy icon 📋</strong> to copy the password to your clipboard
+      for quick and easy use.
+    </li>
+
+    
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+  <!-- LEFT SIDE -->
+  <div class="footer-left">
+    <p>Designed & Developed by <strong>Akash Mondal</strong></p>
+  </div>
+
+  <!-- RIGHT SIDE : SOCIAL ICONS -->
+  <div class="footer-right">
+    <a href="https://github.com/AkashMondal27" target="_blank" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/akashmondal27/" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="mailto:akashmondal102003@gmail.com" aria-label="Gmail">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <!-- <a href="https://twitter.com/your-twitter" target="_blank" aria-label="Twitter">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a> -->
+
+    <a href="https://instagram.com/akash__diaries" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
