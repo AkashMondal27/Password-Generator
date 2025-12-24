@@ -354,6 +354,158 @@ button:hover {
 }
 
 
+body.light .theme-toggle button {
+  color: #475569;
+}
+
+body.light .theme-toggle button:first-child {
+  border-right: 1px solid #d1d5db;
+}
+
+body.light .theme-toggle button.active {
+  background: #e5e7eb;
+  color: #020617;
+}
+
+
+body.light {
+  background: #e8e7e5;
+  color: #020617;
+}
+
+body.light .header {
+  background:  #87828c;
+}
+
+body.light .logo,
+body.light .header nav a {
+  color: rgb(254, 254, 254);
+}
+body.light .logo:hover{
+  color:rgb(225, 193, 15);
+}
+body.light .header nav a:hover{
+  color:rgb(225, 193, 15);
+}
+
+body.light .home-left h1 {
+  color: #020617;
+}
+body.light .home-left h1 span {
+  color: #f59e0b;
+}
+body.light .home-left p {
+  color: #2e496f;
+}
+
+body.light .subtitle {
+  color: #935541;
+}
+
+body.light .container {
+  background: #a79999;
+  border: 2px solid rgb(180, 175, 175);
+  box-shadow: 1px 1px 10px rgb(135, 90, 27) ;
+}
+
+body.light .container h2 {
+  color: #8c3821;
+}
+body.light samp {
+  color: #3c5a67;
+}
+
+body.light input,
+body.light .password-box input {
+  background: #dadfe3;
+  color: #020617;
+  border: 1px solid #898c8f;
+}
+
+body.light .copy {
+  background: #64c471;
+  color: #020617;
+}
+body.light .copy:hover {
+  background: #0cb74a;
+}
+
+body.light .option {
+  background: #93827d;
+  border: 1px solid #cbd5e1;
+  color: #020617;
+}
+
+body.light .option input {
+  border: 2px solid #736360;
+}
+
+body.light .option input:checked {
+  background-color: #f59e0b;
+  border-color: #5c5b5a;
+}
+
+
+body.light .option:hover {
+  border-color: #f59e0b;
+  background: #d9a79f;
+}
+
+body.light .option:has(input:checked) {
+  border-color: #f5420b;
+  background:  #8e6d68;
+}
+
+
+body.light button {
+  background: rgb(128, 149, 146);
+  color: rgb(50, 2, 2);
+  border: 1px solid rgb(180, 175, 175);
+}
+
+body.light button:hover {
+  background:  rgb(83, 152, 81);
+  color: #021710;
+}
+
+
+body.light #copyMsg1,
+body.light #copyMsg2,
+body.light #copyMsg3 {
+  color: #370865;
+}
+
+body.light .guidelines-section {
+  color: #334155;
+}
+
+body.light .guidelines-section h2 {
+  color: #020617;
+}
+
+body.light .guidelines-list strong {
+  color: #6b4226;
+}
+
+
+body.light .footer {
+  background:  #87828c;
+  color: #020617;
+  border-top: 1px solid #e5e7eb;
+}
+
+body.light .footer-right a {
+  background: #e5e7eb;
+  color: #020617;
+}
+
+body.light .footer-right a:hover {
+  background: #24b7fb;
+  color: #020617;
+}
+
+
+
 
 html {
   scroll-behavior: smooth;

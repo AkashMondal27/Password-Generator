@@ -81,8 +81,26 @@ function copyPassword() {
     }, 1500);
 }
 
+// THEME TOGGLE
+
+const lightBtn = document.getElementById("lightBtn");
+const darkBtn = document.getElementById("darkBtn");
+
+function setLight() {
+  document.body.classList.add("light");
+  lightBtn.classList.add("active");
+  darkBtn.classList.remove("active");
+}
+
+function setDark() {
+  document.body.classList.remove("light");
+  darkBtn.classList.add("active");
+  lightBtn.classList.remove("active");
+}
+
+
+setDark();
 
 
 
 
-;
